@@ -9,7 +9,7 @@ const RoomContext= React.createContext();
          loading: true
 
      };
-     
+     //getData
      componentDidMount(){
          let rooms= this.formatData(items)
          let featuredRoooms = rooms.filter(room =>room.featured=== true);
