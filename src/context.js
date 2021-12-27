@@ -14,7 +14,7 @@ const RoomContext= React.createContext();
          let rooms= this.formatData(items)
          let featuredRoooms = rooms.filter(room =>room.featured=== true);
          this.setState({
-             rooms,
+             rooms, 
              featuredRoooms,
              sortedRooms: rooms,
              loading: false
