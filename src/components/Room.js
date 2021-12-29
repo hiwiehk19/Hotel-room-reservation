@@ -4,13 +4,13 @@ import defaultImg from "../images/room-1.jpeg"
 export default function Room(room) {
     const {name , slug, images, price} =room;
     return (
-        <div>Hello from rooms</div>
-      // <article className='room'>
-          // <div className='img-container'>
-             //  <img src={images[0]|| defaultImg}
-            //   alt='single room'/>
-          // </div>
-     // </article>
+        
+       <article className='room'>
+           <div className='img-container'>
+               <img src={images[0]|| defaultImg}
+               alt='single room'/>
+           </div>
+      </article>
     )
 }
  
