@@ -12,7 +12,7 @@ const RoomContext= React.createContext();
      //getData
      componentDidMount(){
          let rooms= this.formatData(items)
-         let featuredRoooms = rooms.filter(room =>room.featured=== true);
+         let featuredRoooms = rooms.filter(room => room.featured === true);
          this.setState({
              rooms, 
              featuredRoooms,
