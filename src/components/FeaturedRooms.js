@@ -8,8 +8,8 @@ export default class FeaturedRooms  extends Component {
     static contextType = RoomContext;
     render() {
         let { loading, featuredRooms : rooms } = this.context;
-        console.log(rooms);
-        rooms =rooms && rooms.map(room => {
+      //  console.log(rooms);
+       const room_list =rooms && rooms.map(room => {
             return <Room key={room.id} room={room}/>
         });
         return (
@@ -17,7 +17,7 @@ export default class FeaturedRooms  extends Component {
             <section className="featured-rooms container">
                 <Title  title="Featured Rooms" />
                 <div className="row">
-                  {loading ? <Loading/> : rooms}
+                  {loading ? <Loading/> : room_list}
                 </div>
             </section>
         )

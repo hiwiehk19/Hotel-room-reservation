@@ -7,7 +7,7 @@ export default function Room(room) {
         
        <article className='room'>
            <div className='img-container'>
-               <img src={images[0]|| defaultImg}
+               <img src={ images[0] }
                alt='single room'/>
            </div>
       </article>
