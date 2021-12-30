@@ -1,9 +1,8 @@
-import React from 'react'
-import Hero from '../components/Hero'
-const Error = () => {
-    return (
-        <Hero /> 
-    )
-}
+import React from "react";
+import Hero from "../components/Hero";
 
-export default Error
+const Error = () => {
+  return <Hero />;
+};
+
+export default Error;
