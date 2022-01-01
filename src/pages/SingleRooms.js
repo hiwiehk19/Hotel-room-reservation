@@ -2,7 +2,7 @@ import React from "react";
 import defaultBcg from '../images/room-1.jpeg'
 import Hero from '../components/Hero'
 import Banner from '../components/Banner'
-import {Link, useParams} from 'react-router-dom'
+import {Link} from 'react-router-dom'
 import { RoomContext } from "../context";
 import { Component } from "react/cjs/react.production.min";
 class SingleRooms extends Component  {
@@ -29,7 +29,25 @@ render()
        </Link>
     </div>
   }
-}
+
+const {
+  name,
+  description,
+  capacity,
+  size,
+  price,
+  extras,
+  breakfast,
+  pets,
+  images
+} = room;
+return <Hero hero='roomsHero'>
+  <Banner title={`${name} room`}>
+  <Link to ="/rooms" className="btn-primary">
+         back to rooms
+       </Link> 
+  </Banner>
+  </Hero>}
 }; 
 
 export default SingleRooms;
